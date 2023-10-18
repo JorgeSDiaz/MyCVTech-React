@@ -1,9 +1,5 @@
-import { Button } from 'primereact/button';
+import Header from "./components/header/Header";
 
 export default function App() {
-  return (
-    <div className="card flex justify-content-center">
-      <Button label="Check" icon="pi pi-check" className='boton'/>
-    </div>
-  );
+  return <Header color="#6499E3"/>;
 }
