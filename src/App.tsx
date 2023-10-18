@@ -1,8 +1,9 @@
-function App() {
-  return (
-    <>
-    </>
-  )
-}
+import { Button } from 'primereact/button';
 
-export default App
+export default function App() {
+  return (
+    <div className="card flex justify-content-center">
+      <Button label="Check" icon="pi pi-check" className='boton'/>
+    </div>
+  );
+}
