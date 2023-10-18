@@ -1,9 +1,10 @@
-import { Button } from 'primereact/button';
+
+import { LandingPage } from './pages/LandingPage';
 
 export default function App() {
   return (
     <div className="card flex justify-content-center">
-      <Button label="Check" icon="pi pi-check" className='boton'/>
+      <LandingPage></LandingPage>
     </div>
   );
 }
