@@ -1,7 +1,7 @@
 import "../../styles/header.css";
-import ActionButton from "./action-button/ActionButton";
 
 import Logo from "./logo/Logo";
+import NavButton from "./nav-button/NavButton";
 
 interface HeaderProps {
   color: string;
@@ -17,17 +17,9 @@ export default function Header({ color }: HeaderProps) {
             <Logo logo_path="src/assets/education.svg" width="50" />
           </div>
           <div className="field col">
-            <div className="flex justify-content-end gap-1">
-              <ActionButton
-                icon="pi-user"
-                label="Student Login"
-                color="white"
-              />
-              <ActionButton
-                icon="pi-building"
-                label="Recruiter Login"
-                color="white"
-              />
+            <div className="flex justify-content-end gap-4 py-3">
+              <NavButton label="Login Recruiter" direction="/loginrecruiter" icon="building"/>
+              <NavButton label="Login User" direction="/login" icon="user" />
             </div>
           </div>
         </div>
