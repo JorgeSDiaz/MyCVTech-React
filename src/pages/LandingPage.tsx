@@ -1,5 +1,6 @@
 import { AboutUs } from "../components/AboutUs";
 import { Characters } from "../components/Characters";
+import { Footer } from "../components/Footer";
 import { Presentation } from "../components/Presentation";
 
 export const LandingPage = () => {
@@ -11,7 +12,11 @@ export const LandingPage = () => {
       <Characters color="#5FBEB5"   initialPosition="start" image={"first.jpg"} info="Facilitamos la conexión de los usuarios con empresas y organizaciones en su campo, proporcionando oportunidades para establecer relaciones profesionales." ></Characters>
       <Characters color="#96B6E8"   initialPosition="end" image={"second.jpg"} info="Centralizamos toda la información profesional, proyectos y otras experiencias que ayuden a tener un perfil profesional sólido." ></Characters>
       <Characters color="#5FBEB5"   initialPosition="start" image={"third.jpg"} info="Apoyamos en la generación de hojas de vida para los estudiantes automáticamente a partir de la información academica de sus perfiles." ></Characters>
-      
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer color="black" links={["Soporte","Preguntas Frecuentes","Blogs"]}></Footer>
+      <p className="text-1xl font-roboto text-black text-center font-bold">2023-CVTech.com ® Todos los derechos reservados.</p>
     </div>
       
   );
