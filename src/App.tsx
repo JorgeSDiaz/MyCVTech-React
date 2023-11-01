@@ -1,11 +1,11 @@
 import Header from "./components/header/Header";
-import Banner from "./components/profile/banner/Banner";
+import Profile from "./components/profile/Profile";
 
 export default function App() {
   return (
     <>
-      <Header color="#6499E3" />
-      <Banner />
+      <Header color="#1D62CA" />
+      <Profile />
     </>
   );
 }

@@ -1,18 +1,23 @@
 import { Image } from "primereact/image";
 
-export default function Banner() {
+interface BannerProps {
+  backgroundUrl: string;
+  profileUrl: string;
+}
+
+export default function Banner({ backgroundUrl, profileUrl }: BannerProps) {
   return (
     <>
       <div
         className="bg-auto bg-no-repeat"
         style={{
-          backgroundImage: 'url("src/images/stock_8.jpg")',
+          backgroundImage: `url(${backgroundUrl})`,
           backgroundRepeat: "no-repeat",
           width: "100%",
         }}
       >
         <Image
-          src="src/images/stock_7_profile.jpg"
+          src={`${profileUrl}`}
           width="240"
           imageClassName="border-circle p-3"
         />
