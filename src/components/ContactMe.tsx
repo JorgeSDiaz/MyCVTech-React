@@ -11,8 +11,7 @@ interface ContactMeProps {
 export const ContactMe: React.FC<ContactMeProps> = ({ gmail, whatsapp }) => {
   return (
     <div style={{ alignItems: 'center' }}>
-      <br></br>
-      <br></br>
+      
       <h2 className="text-3xl font-roboto font-black text-white text-center">Contacto</h2>
       <div className="flex items-center">
         <FontAwesomeIcon icon={faEnvelope} size="xl" style={{ color: "#ff0000" }} />

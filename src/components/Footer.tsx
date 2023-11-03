@@ -10,10 +10,10 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ color, links }) => {
   return (
-    <div className={`bg-${color} flex w-screen`} style={{ display: 'flex', justifyContent: 'space-between'}}>
-      <SocialNetwork></SocialNetwork>
-        <ContactMe gmail={"servicioalcliente@cvtech.com"} whatsapp={"+57 3142888389"}></ContactMe>
-        <InterestingLinks links={links}></InterestingLinks>
+    <div className={`bg-${color} flex w-screen p-6`} style={{ justifyContent: 'space-between' }}>
+      <SocialNetwork />
+      <ContactMe gmail={"servicioalcliente@cvtech.com"} whatsapp={"+57 3142888389"} />
+      <InterestingLinks links={links} />
     </div>
   );
 };
