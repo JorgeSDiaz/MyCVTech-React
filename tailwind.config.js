@@ -8,7 +8,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customGreen: '#5FBEB5',
+      },
+    },
   },
   plugins: [],
 }
